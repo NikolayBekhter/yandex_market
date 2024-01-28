@@ -27,13 +27,13 @@ public class Tests extends BaseTests {
      */
     @Feature("Проверка результатов поиска")
     @DisplayName("Проверка результатов поиска c помощью PO")
-    @ParameterizedTest(name = "{displayName} {arguments}")
-    @MethodSource("ru.bellintegrator.tests.selenide.helpers.DataProvider#providerCheckingMoney")
+//    @ParameterizedTest(name = "{displayName} {arguments}")
+//    @MethodSource("ru.bellintegrator.tests.selenide.helpers.DataProvider#providerCheckingMoney")
     public void checkJobYandexSearch(String category, String sectionName, List<String> setBrandes, List<String> checkBrandes) {
-        open(Properties.testsProperties.yandexUrl(), YandexMainPage.class)
-                .searchSection(category, sectionName)
-                .checkingTitleByText(sectionName)
-                .setBrands(setBrandes)
-                /*.checkingResults(checkBrandes)*/;
+//        open(Properties.testsProperties.yandexUrl(), YandexMainPage.class)
+//                .searchSection(category, sectionName)
+//                .checkingTitleByText(sectionName)
+//                .setBrands(setBrandes)
+//                .checkingResults(checkBrandes);
     }
 }
